@@ -1,0 +1,26 @@
+.about__header {
+  max-width: 1400px;
+  margin: 0rem auto;
+}
+
+.about__header-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__header-inner h5 {
+  /* border: 1px solid #000; */
+  font-weight: 600;
+  width: 100%;
+  padding: 0.7rem 3rem;
+  text-align: right;
+  font-size: 18px;
+  background: rgb(217, 216, 216);
+}
+
+.about__header-inner h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 40px;
+  font-weight: 600;
+}

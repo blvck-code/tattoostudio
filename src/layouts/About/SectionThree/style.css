@@ -1,0 +1,26 @@
+.about__section-four {
+  max-width: 1400px;
+  margin: 1rem auto;
+}
+
+.about__section-four-inner {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about__section-four-inner p {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #111;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about__section-four-inner span {
+  font-size: 15px;
+  color: #555;
+}

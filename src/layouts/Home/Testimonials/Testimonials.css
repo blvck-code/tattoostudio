@@ -1,0 +1,64 @@
+.testimonies {
+  min-height: 30vh;
+  z-index: 15;
+  margin-top: -300px;
+  max-width: 1400px;
+  margin: -100px auto 0;
+  position: relative;
+}
+
+.testimonies__inner {
+  height: 100%;
+  z-index: 5;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.testimonies__right {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 2rem;
+}
+
+.testimonies__right h4 {
+  font-size: 22px;
+  font-style: italic;
+  color: #181818;
+  font-family: cursive;
+}
+
+.testimonies__right img {
+  width: 40px;
+}
+
+.testimonies__desc {
+  font-style: italic;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.testimonies__nav {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.testimonies__nav svg {
+  /* width: 50px; */
+  font-size: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.testimonies__nav svg:hover {
+  transform: scale(1.3);
+  color: #555;
+}
+
+.testimonies__left img {
+  width: 90%;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px 0px rgba(185, 181, 181, 0.6);
+}

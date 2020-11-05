@@ -1,0 +1,32 @@
+.about__section-two {
+  max-height: 80vh;
+  /* border: 1px solid #000; */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  background-image: linear-gradient(
+    /* 45deg, */ rgb(140, 117, 233),
+    rgb(43, 172, 215)
+  );
+}
+
+.about__section-two-inner {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  color: #ccc;
+}
+
+.section-two-left img {
+  width: 70%;
+}
+
+.section-two-right h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+
+.section-two-right p {
+  font-size: 16px;
+}
