@@ -1,16 +1,53 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useLocation } from "react-use";
 import inkPress from "../../assets/images/logo.png";
 import "./Header.css";
 
 function Header() {
   const { pathname } = useLocation();
+  const [navbar, setNavbar] = useState(false);
 
-  const toggleActive = (e) => {
-    console.log(e.target.href);
-    console.log(pathname);
+  const links = [
+    {
+      name: "home",
+      url: "/",
+    },
+    {
+      name: "about",
+      url: "/about",
+    },
+    {
+      name: "services",
+      url: "/services",
+    },
+    {
+      name: "artists",
+      url: "/artists",
+    },
+    {
+      name: "news",
+      url: "/news",
+    },
+    {
+      name: "gallery",
+      url: "/gallery",
+    },
+    {
+      name: "contacts",
+      url: "/contacts",
+    },
+  ];
+
+  const changeBg = () => {
+    if (window.scrollY >= 70) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
   };
+
+  window.addEventListener("scroll", changeBg);
 
   return (
     <nav className="navbar">
@@ -33,36 +70,19 @@ function Header() {
           <i className="fa fa-pinterest" />
         </div>
       </div>
-      <div className="navbar__bottom">
+      <div className={navbar ? "navbar__bottom active" : "navbar__bottom"}>
         <div className="navbar__logo">
           <img src={inkPress} alt="inkPress" />
         </div>
         <div className="navbar__menu">
           <ul>
-            <li>
-              <NavLink onClick={toggleActive} to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink onClick={toggleActive} to="/about">
-                About Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink onClick={toggleActive} to="/services">
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/news">News</NavLink>
-            </li>
-            <li>
-              <NavLink to="/gallery">Gallery</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contacts">Contacts</NavLink>
-            </li>
+            {links?.map(({ name, url }, idx) => (
+              <li key={idx}>
+                <Link className={pathname === url ? "active" : ""} to={url}>
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

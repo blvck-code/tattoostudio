@@ -4,10 +4,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 0;
-  background-image: linear-gradient(
-    /* 45deg, */ rgb(140, 117, 233),
-    rgb(43, 172, 215)
-  );
+  background-image: linear-gradient(rgb(140, 117, 233), rgb(43, 172, 215));
 }
 
 .about__section-two-inner {

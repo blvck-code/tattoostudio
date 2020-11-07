@@ -15,7 +15,7 @@ replicate the example that you brought in... All in all,
 
   return (
     <section className="section__three">
-      <div className="section__three-inner grid">
+      <div className="section__three-inner">
         <div className="section__three-left">
           <div className="section__title">
             <h1>Mid-Sized Tattoos</h1>
@@ -45,7 +45,6 @@ replicate the example that you brought in... All in all,
             </div>
           </div>
         </div>
-        <div className="section__three-right"></div>
       </div>
     </section>
   );

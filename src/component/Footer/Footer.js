@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import "./Footer.css";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email);
+    setEmail("");
+  };
   return (
     <footer className="footer">
       <div className="footer__top grid4">
@@ -19,15 +26,24 @@ function Footer() {
         </div>
         <div className="footer__item">
           <div className="footer__title">
-            <h4>Latest Posts</h4>
+            <h4>Newsletters</h4>
           </div>
-          <div className="footer__article">
-            <h4>The "finger tattoo" and their meaning</h4>
-            <p>10 Aug 2020</p>
-          </div>
-          <div className="footer__article">
-            <h4>Symbolic tattoos found on ancient Eqyptian mummy</h4>
-            <p>10 Aug 2020</p>
+          <div className="footer__newsletter">
+            <p>Subscribe to our newsletter to get the lastest updates</p>
+            <form onSubmit={handleSubmit}>
+              <div className="footer__newsletter-form">
+                <i className="fa fa-envelope-o" />
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  placeholder="Enter E-mail Address"
+                />
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
         <div className="footer__item">

@@ -1,0 +1,32 @@
+.services {
+  margin: 1rem auto;
+  max-width: 1400px;
+  background: url("../../../assets/images/content-bg02.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+}
+
+.services__inner {
+  height: 100%;
+  width: 55%;
+  padding: 5rem 3rem;
+  color: #fff;
+}
+.services__inner .section__title h1 {
+  font-size: 2.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.services__sub-title h5 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.services__content p {
+  color: #ccc;
+}

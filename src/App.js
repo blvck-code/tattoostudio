@@ -6,7 +6,8 @@ import AboutComponent from "./container/About";
 import GalleryComponent from "./container/Gallery";
 import NewsComponent from "./container/News";
 import ServicesComponent from "./container/Services";
-import ContactsComponent from "./container/About";
+import ContactsComponent from "./container/Contacts";
+import ArtistsComponent from "./container/Artists";
 import Footer from "./component/Footer/Footer";
 import "./App.css";
 import "./assets/fontawesome/css/font-awesome.min.css";
@@ -24,6 +25,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomeComponent} />
         <Route path="/about" exact component={AboutComponent} />
+        <Route path="/artists" exact component={ArtistsComponent} />
         <Route path="/services" exact component={ServicesComponent} />
         <Route path="/news" exact component={NewsComponent} />
         <Route path="/gallery" exact component={GalleryComponent} />

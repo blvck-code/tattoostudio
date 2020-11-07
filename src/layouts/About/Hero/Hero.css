@@ -1,11 +1,11 @@
 .about__hero {
   margin: 1rem auto;
   max-width: 1400px;
-  background: url("../../../assets/images/slider-img06.jpg");
+  background: url("../../../assets/images/content-bg03.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
 }
 

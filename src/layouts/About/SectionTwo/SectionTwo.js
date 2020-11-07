@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../assets/images/home-img04.jpg";
+import img from "../../../assets/images/artists01.jpg";
 import "./style.css";
 
 function SectionTwo() {

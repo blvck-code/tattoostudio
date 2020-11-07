@@ -1,6 +1,5 @@
 import React from "react";
 import Articles from "../../layouts/Home/Articles/Articles";
-import Artists from "../../layouts/Home/Artists/Artists";
 import Instagram from "../../layouts/Home/Instagram/Instagram";
 import SectionFour from "../../layouts/Home/SectionFour/SectionFour";
 import SectionOne from "../../layouts/Home/SectionOne/SectionOne";
@@ -19,10 +18,9 @@ function HomeComponent() {
       <SectionTwo />
       <Testimonials />
       <SectionThree />
-      <Artists />
-      <SectionFour />
       <Articles />
       <Instagram />
+      <SectionFour />
     </>
   );
 }

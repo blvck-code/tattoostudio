@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import img from "../../../assets/images/home-img07.jpg";
+import { Link } from "react-router-dom";
+import img from "../../../assets/images/news/news-img01.jpg";
+import { articles } from "../../../data";
 import "./Articles.css";
 
 function Articles() {
+  const [item, setItem] = useState(0);
+  const [current, setCurrent] = useState(articles[item]);
+
+  const nextTest = () => {
+    if (item === articles?.length - 1) {
+      setItem(0);
+    } else {
+      setItem(item + 1);
+    }
+    setCurrent(articles[item]);
+    console.log(current);
+  };
+
+  const prevTest = () => {
+    if (item === 0) {
+      setItem(articles?.length - 1);
+    } else {
+      setItem(item - 1);
+    }
+    setCurrent(articles[item]);
+    console.log(current);
+  };
+
   return (
     <section className="articles">
       <div className="articles__inner grid">
@@ -16,21 +41,15 @@ function Articles() {
             <div className="title__underline" />
           </div>
           <div className="article__body">
-            <p className="article__date">10 Aug 2020</p>
-            <h2 className="article__title">Celtic Tattoos & Traditions</h2>
-            <p className="article__decs">
-              So whenever you feel like a 10 by 10 inch tattoos design will fit
-              yourself the best, you can easily sketch it with our salon's
-              masters or ask them to replicate the example that you brought
-              in... All in all, even shoulder tattoos can fall under this
-              category.
-            </p>
-            <a href="">
+            <p className="article__date">{current.date_posted}</p>
+            <h2 className="article__title">{current.title}</h2>
+            <p className="article__decs">{current.desc}</p>
+            <Link to="/news">
               Read More <i className="fa fa-angle-double-right" />
-            </a>
+            </Link>
             <div className="article__nav">
-              <MdChevronLeft />
-              <MdChevronRight />
+              <MdChevronLeft onClick={prevTest} />
+              <MdChevronRight onClick={nextTest} />
             </div>
           </div>
         </div>

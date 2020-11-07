@@ -129,6 +129,7 @@
 
 .instagram__img img {
   width: 280px;
+  height: 135px;
   margin: 0 2px;
   overflow-y: visible;
   object-fit: cover;

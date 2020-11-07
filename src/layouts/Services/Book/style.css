@@ -1,0 +1,60 @@
+.services__book {
+  min-height: 70vh;
+  margin: 0 auto -1rem;
+  max-width: 1400px;
+  background: url("../../../assets/images/slider-img04.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.services__book::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.services__book-inner {
+  display: flex;
+  height: 100%;
+  grid-gap: 60px;
+  align-items: center;
+  color: #fff;
+  padding: 4rem 3rem;
+}
+
+.services__book-intro {
+  flex: 4;
+  z-index: 3;
+  align-self: flex-start;
+}
+
+.services__book-intro h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.services__book-intro p {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.services__book-form {
+  flex: 6;
+  z-index: 3;
+  border-radius: 4px;
+  height: 100%;
+  color: #000;
+  background: rgba(248, 246, 246, 0.694);
+}
