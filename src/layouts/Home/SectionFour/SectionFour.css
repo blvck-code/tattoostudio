@@ -1,5 +1,4 @@
 .section__four {
-  max-width: 1400px;
   height: 55vh;
   margin: 0 auto;
   color: #fff;
@@ -76,5 +75,20 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section__four {
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .section__four h1 {
+    font-size: 2.5rem;
+  }
+  .section__four h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
   }
 }

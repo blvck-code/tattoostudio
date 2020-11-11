@@ -4,7 +4,7 @@
 }
 
 .about__section-four-inner {
-  width: 65%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   padding: 2rem;
@@ -23,4 +23,9 @@
 .about__section-four-inner span {
   font-size: 15px;
   color: #555;
+}
+@media (max-width: 768px) {
+  .about__section-four-inner {
+    width: 100%;
+  }
 }

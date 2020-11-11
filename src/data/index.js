@@ -1,6 +1,9 @@
-import img1 from "../assets/images/artist02.jpg";
-import img2 from "../assets/images/home-img05.jpg";
-import img3 from "../assets/images/artists01.jpg";
+import artists01 from "../assets/images/artists/artists01.jpg";
+import artists02 from "../assets/images/artists/artists02.jpg";
+import artists03 from "../assets/images/artists/artists03.jpeg";
+import artists04 from "../assets/images/artists/artists04.jpg";
+import artists05 from "../assets/images/artists/artists05.jpg";
+import artists06 from "../assets/images/artists/artists06.jpg";
 
 import article1 from "../assets/images/news/news-img01.jpg";
 import article2 from "../assets/images/news/news-img02.jpg";
@@ -9,9 +12,26 @@ import article4 from "../assets/images/news/news-img04.jpg";
 import article5 from "../assets/images/news/news-img05.jpg";
 import article6 from "../assets/images/news/news-img06.jpg";
 
+import insta1 from "../assets/images/instagram/insta01.jpg";
+import insta2 from "../assets/images/instagram/insta02.jpg";
+import insta3 from "../assets/images/instagram/insta03.jpg";
+import insta4 from "../assets/images/instagram/insta04.jpg";
+import insta5 from "../assets/images/instagram/insta05.jpg";
+import insta6 from "../assets/images/instagram/insta06.jpg";
+import insta7 from "../assets/images/instagram/insta07.jpg";
+import insta8 from "../assets/images/instagram/insta08.jpg";
+import insta11 from "../assets/images/instagram/insta10.png";
+import insta12 from "../assets/images/instagram/insta11.png";
+import insta13 from "../assets/images/instagram/insta12.jpg";
+import insta14 from "../assets/images/instagram/insta13.jpg";
+import insta15 from "../assets/images/instagram/insta14.jpg";
+import insta16 from "../assets/images/instagram/insta15.jpg";
+import insta10 from "../assets/images/piercing01.jpg";
+import insta17 from "../assets/images/cover-up01.jpg";
+
 export const artists = [
   {
-    img: img1,
+    img: artists01,
     name: "Joe Granger",
     proffession: "Tattoo Master",
     socials: [
@@ -23,7 +43,7 @@ export const artists = [
     ],
   },
   {
-    img: img2,
+    img: artists02,
     name: "Alejandra Idarraga",
     proffession: "Piercing Master",
     socials: [
@@ -35,7 +55,43 @@ export const artists = [
     ],
   },
   {
-    img: img3,
+    img: artists03,
+    name: "David Whoapez",
+    proffession: "Tattoo Master",
+    socials: [
+      "fa fa-facebook",
+      "fa fa-twitter",
+      "fa fa-instagram",
+      "fa fa-linkedin",
+      "fa fa-pinterest",
+    ],
+  },
+  {
+    img: artists04,
+    name: "David Whoapez",
+    proffession: "Tattoo Master",
+    socials: [
+      "fa fa-facebook",
+      "fa fa-twitter",
+      "fa fa-instagram",
+      "fa fa-linkedin",
+      "fa fa-pinterest",
+    ],
+  },
+  {
+    img: artists05,
+    name: "David Whoapez",
+    proffession: "Tattoo Master",
+    socials: [
+      "fa fa-facebook",
+      "fa fa-twitter",
+      "fa fa-instagram",
+      "fa fa-linkedin",
+      "fa fa-pinterest",
+    ],
+  },
+  {
+    img: artists06,
     name: "David Whoapez",
     proffession: "Tattoo Master",
     socials: [
@@ -136,4 +192,23 @@ export const articles = [
     desc: `While it might seem these days that the world of tattoos is what Africa has always been about, this is just 
                 not so true, historically-wise...`,
   },
+];
+
+export const gallery = [
+  insta1,
+  insta2,
+  insta3,
+  insta4,
+  insta5,
+  insta6,
+  insta7,
+  insta8,
+  insta10,
+  insta11,
+  insta12,
+  insta13,
+  insta14,
+  insta15,
+  insta16,
+  insta17,
 ];

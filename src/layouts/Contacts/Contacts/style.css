@@ -4,8 +4,34 @@
 }
 
 .contacts__body-inner {
-  width: 90%;
+  padding: 0 2rem;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .contacts__body-inner {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  /* .contacts__body-inner.grid {
+    grid-template-columns: 1fr !important;
+  } */
+  .contacts__body-inner.grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contacts__body {
+    margin: 0 !important;
+  }
+
+  .contacts__body-info {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .contacts__body-info h1 {
+    font-size: 2.4rem !important;
+  }
 }
 
 .contacts__body-inner.grid {

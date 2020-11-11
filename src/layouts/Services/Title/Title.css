@@ -24,3 +24,9 @@
   font-size: 40px;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .services__header-inner h1 {
+    font-size: 30px;
+  }
+}

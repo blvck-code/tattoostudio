@@ -41,7 +41,7 @@ img {
 
 section {
   margin: 0 auto;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 .grid {
@@ -54,6 +54,49 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+}
+/* Large Display */
+@media (min-width: 1200px) {
+}
+
+/* Default  */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Potrait Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* .grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  } */
+}
+
+/* Tablets to phones */
+@media (max-width: 767px) {
+  /* .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  } */
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  /* .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  } */
+}
+
+/* Xtra small  */
+@media (max-width: 320px) {
+  /* .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  } */
 }
 
 .grid4 {

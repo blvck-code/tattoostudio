@@ -10,6 +10,13 @@
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .footer__top.grid4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
 .footer__top.grid4 {
   grid-gap: 40px;
 }

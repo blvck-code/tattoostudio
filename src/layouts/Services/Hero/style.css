@@ -1,6 +1,6 @@
 .services {
   margin: 1rem auto;
-  max-width: 1400px;
+  width: 100vw;
   background: url("../../../assets/images/content-bg02.jpg");
   background-position: center;
   background-size: cover;
@@ -9,6 +9,9 @@
 
 .services__inner {
   height: 100%;
+  max-width: 900px;
+  margin-left: 10%;
+  /* margin: 0 auto; */
   width: 55%;
   padding: 5rem 3rem;
   color: #fff;
@@ -29,4 +32,15 @@
 
 .services__content p {
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .services {
+    height: auto;
+  }
+
+  .services__inner {
+    padding: 3rem 0rem;
+    margin-left: 1rem;
+  }
 }

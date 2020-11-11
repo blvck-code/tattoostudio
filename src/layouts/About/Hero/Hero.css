@@ -1,6 +1,5 @@
 .about__hero {
   margin: 1rem auto;
-  max-width: 1400px;
   background: url("../../../assets/images/content-bg03.jpg");
   background-position: center;
   background-size: cover;
@@ -22,6 +21,7 @@
 
 .about__hero-inner {
   z-index: 3;
+  max-width: 1400px;
   width: 90%;
   height: 100%;
   margin: 0 auto;
@@ -46,4 +46,15 @@
 .about__hero-inner p {
   color: #ccc;
   margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .about__hero-inner {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .about__hero-inner.grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 }

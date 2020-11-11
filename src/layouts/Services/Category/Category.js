@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../../../assets/images/gallery/gallery-img04.jpg";
-import img2 from "../../../assets/images/gallery/gallery-img02.jpg";
+import img1 from "../../../assets/images/categories/small.jpg";
+import img2 from "../../../assets/images/categories/large.jpg";
 import img3 from "../../../assets/images/piercing01.jpg";
-import img4 from "../../../assets/images/cover-up01.jpg";
-import img5 from "../../../assets/images/gallery/gallery-img06.jpg";
-import img6 from "../../../assets/images/gallery/gallery-img07.jpg";
+import img4 from "../../../assets/images/categories/cover-up01.jpg";
+import img5 from "../../../assets/images/categories/design.jpg";
+import img6 from "../../../assets/images/categories/insta14.jpg";
 import "./style.css";
 
 function Section() {

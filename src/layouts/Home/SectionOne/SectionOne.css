@@ -62,3 +62,31 @@
   top: -50px;
   bottom: -50px; */
 }
+
+/* Potrait Tablets */
+@media (max-width: 768px) {
+  .section__one {
+    padding: 0;
+    min-height: auto;
+  }
+  .section__one-inner {
+    /* grid-template-columns: 1.5fr 1fr !important; */
+    /* grid-gap: 30px; */
+    border: 1px solid #000;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .section__one-left {
+    padding: 2rem 0rem;
+  }
+
+  .section__one-items {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 10px;
+  }
+
+  .section__one-right {
+    height: 50%;
+  }
+}

@@ -22,12 +22,7 @@ function Book() {
     <section className="services__book">
       <div className="services__book-inner">
         <div className="services__book-intro">
-          <h1>
-            Wanna get an <br />
-            edgy tattoo or
-            <br />
-            piercing?
-          </h1>
+          <h1>Wanna get an edgy tattoo or piercing?</h1>
           <p>
             We offer a wide range of tattooing and piercing services, so you can
             easily choose the right one...

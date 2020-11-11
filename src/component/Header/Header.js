@@ -7,6 +7,7 @@ import "./Header.css";
 function Header() {
   const { pathname } = useLocation();
   const [navbar, setNavbar] = useState(false);
+  const [activeNav, setActiveNav] = useState(false);
 
   const links = [
     {
@@ -75,7 +76,16 @@ function Header() {
           <img src={inkPress} alt="inkPress" />
         </div>
         <div className="navbar__menu">
-          <ul>
+          <div
+            className={activeNav ? "mobile-menu close" : "mobile-menu"}
+            onClick={() => setActiveNav(!activeNav)}>
+            {activeNav ? (
+              <i className="fa fa-close" />
+            ) : (
+              <i className="fa fa-bars" />
+            )}
+          </div>
+          <ul className="menu-nav">
             {links?.map(({ name, url }, idx) => (
               <li key={idx}>
                 <Link className={pathname === url ? "active" : ""} to={url}>

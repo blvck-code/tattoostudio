@@ -58,3 +58,14 @@
   color: #000;
   background: rgba(248, 246, 246, 0.694);
 }
+
+@media (max-width: 768px) {
+  .services__book-inner {
+    padding: 3rem 1rem;
+    grid-gap: 20px;
+  }
+
+  .services__book {
+    min-height: auto;
+  }
+}
